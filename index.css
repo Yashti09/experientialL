@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Network Speed Test</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    margin:0;
+    background:linear-gradient(135deg,#f4f6f9,#e2e8f0);
+    scroll-behavior:smooth;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:blueviolet;
+    text-align:center;
+    padding:50px 20px;
+}
+
+/* Navbar */
+nav{
+    background:#1e293b;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#22c55e;
+}
+
+/* Sections */
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+/* Button */
+.start{
+    padding:15px 30px;
+    font-size:18px;
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+    border:none;
+    color:aqua;
+    cursor:pointer;
+    border-radius:30px;
+    margin-top:20px;
+    transition:0.3s;
+}
+
+.start:hover{
+    transform:scale(1.08);
+}
+
+/* Speed UI */
+.speed-box{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.circle{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background:white;
+    border:6px solid #22c55e;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.circle:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+/* Table */
+table{
+    margin:auto;
+    border-collapse:collapse;
+    width:70%;
+    background:rgb(26, 98, 42);
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#551761;
+    color:rgb(135, 20, 20);
+}
+
+th,td{
+    padding:12px;
+}
+
+/* Footer */
+footer{
+    background:#0f172a;
+    color:rgba(181, 43, 112, 0.466);
+    margin-top:50px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:50px 20px;
+}
+
+.footer-box{
+    width:220px;
+}
+
+.footer-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-box ul li{
+    margin:8px 0;
+}
+
+.footer-box ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-box ul li a:hover{
+    color:#22c55e;
+}
+
+.footer-bottom{
+    text-align:center;
+    background:#020617;
+    padding:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .speed-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    table{
+        width:95%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>⚡ Network Speed Test</h1>
+    <p>Monitor your internet performance with ease</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#test">Speed Test</a>
+    <a href="#history">History</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>Click below to view network speed interface</p>
+    <button class="start">Start Test</button>
+</section>
+
+<section id="test">
+    <h2>Speed Results</h2>
+
+    <div class="speed-box">
+        <div class="circle">
+            <h3>--</h3>
+            <p>Ping (ms)</p>
+        </div>
+
+        <div class="circle">
+            <h3>--</h3>
+            <p>Download (Mbps)</p>
+        </div>
+
+        <div class="circle">
+            <h3>--</h3>
+            <p>Upload (Mbps)</p>
+        </div>
+    </div>
+</section>
+
+<section id="history">
+    <h2>Last Result</h2>
+
+    <table>
+        <tr>
+            <th>Ping</th>
+            <th>Download</th>
+            <th>Upload</th>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>About</h3>
+            <p>Professional speed test UI</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Test</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Network Speed Test</p>
+    </div>
+</footer>
+
+</body>
+</html>
