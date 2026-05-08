@@ -1,3 +1,35 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0
+,700;0,900;1,700&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;5
+00&display=swap'); 
+ 
+/* ── Reset ── */ 
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; } 
+button { cursor: pointer; border: none; background: none; font: inherit; } 
+select, input { font: inherit; } 
+ 
+/* ── Tokens ── */ 
+:root { 
+  --bg:       #0d0d14; 
+  --s1:       #13131f; 
+  --s2:       #191928; 
+  --s3:       #20203a; 
+  --border:   rgba(255,255,255,0.07); 
+  --border2:  rgba(255,255,255,0.13); 
+  --gold:     #c9a96e; 
+  --violet:   #7c6af7; 
+  --mint:     #5ae0a3; 
+  --rose:     #e05a6a; 
+  --text:     #e8e0d4; 
+  --dim:      rgba(232,224,212,0.45); 
+  --mute:     rgba(232,224,212,0.22); 
+  --ff-d:     'Playfair Display', serif; 
+  --ff-m:     'DM Mono', monospace; 
+  --ff-s:     'DM Sans', sans-serif; 
+  --r:        10px; 
+  --r-sm:     7px; 
+  --transition: 0.18s cubic-bezier(0.22,1,0.36,1); 
+}
 body {
     font-family: Arial;
     margin: 0;
